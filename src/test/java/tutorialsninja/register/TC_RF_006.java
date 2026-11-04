@@ -55,8 +55,7 @@ public class TC_RF_006 {
 	        
 	        
 		}
-		
-		
+				
 		public String generateEmail() 
 		{
 			
@@ -66,12 +65,7 @@ public class TC_RF_006 {
 					  
 			  return email;		
 			
-		}
-		
-		
-		
-		
-		
+		}	
 
 	}
 
