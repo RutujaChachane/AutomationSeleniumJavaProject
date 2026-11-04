@@ -1,0 +1,2 @@
+//How do you read Gmail using Java?
+//I integrated Gmail with my Selenium automation using JavaMail and IMAP. After triggering the email from the application, I connected to Gmail, accessed the Inbox and retrieved the required email. I extracted the subject using getSubject(), the body using getContent(), and used Jsoup to extract hyperlinks from the HTML email. This helps automate email verification without manually opening Gmail.
