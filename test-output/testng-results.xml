@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-04T16:20:31 IST" name="Default suite" finished-at="2026-11-04T16:20:37 IST" duration-ms="5455">
+  <suite started-at="2026-11-04T16:31:22 IST" name="Default suite" finished-at="2026-11-04T16:31:27 IST" duration-ms="4362">
     <groups>
     </groups>
-    <test started-at="2026-11-04T16:20:31 IST" name="Default test" finished-at="2026-11-04T16:20:37 IST" duration-ms="5455">
-      <class name="tutorialsninja.register.TC_RF_005">
-        <test-method signature="verifyRegisterWithMandatoryFields()[pri:0, instance:tutorialsninja.register.TC_RF_005@c2db68f]" started-at="2026-11-04T16:20:31 IST" name="verifyRegisterWithMandatoryFields" finished-at="2026-11-04T16:20:37 IST" duration-ms="5342" status="PASS">
+    <test started-at="2026-11-04T16:31:22 IST" name="Default test" finished-at="2026-11-04T16:31:27 IST" duration-ms="4362">
+      <class name="tutorialsninja.register.TC_RF_006">
+        <test-method signature="verifyRegisterWithMandatoryFields()[pri:0, instance:tutorialsninja.register.TC_RF_006@1b2c4efb]" started-at="2026-11-04T16:31:22 IST" name="verifyRegisterWithMandatoryFields" finished-at="2026-11-04T16:31:26 IST" duration-ms="4237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterWithMandatoryFields -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tutorialsninja.register.TC_RF_005@c2db68f]" started-at="2026-11-04T16:20:37 IST" name="closure" finished-at="2026-11-04T16:20:37 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tutorialsninja.register.TC_RF_006@1b2c4efb]" started-at="2026-11-04T16:31:26 IST" name="closure" finished-at="2026-11-04T16:31:27 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- tutorialsninja.register.TC_RF_005 -->
+      </class> <!-- tutorialsninja.register.TC_RF_006 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
