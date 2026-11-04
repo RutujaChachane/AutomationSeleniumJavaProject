@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-04T20:03:57 IST" name="Default suite" finished-at="2026-11-04T20:04:01 IST" duration-ms="3621">
+  <suite started-at="2026-11-04T20:19:13 IST" name="Default suite" finished-at="2026-11-04T20:19:20 IST" duration-ms="7177">
     <groups>
     </groups>
-    <test started-at="2026-11-04T20:03:57 IST" name="Default test" finished-at="2026-11-04T20:04:01 IST" duration-ms="3621">
-      <class name="tutorialsninja.register.TC_RF_008">
-        <test-method signature="verifyRegisterWithMandatoryFields()[pri:0, instance:tutorialsninja.register.TC_RF_008@4bff64c2]" started-at="2026-11-04T20:03:57 IST" name="verifyRegisterWithMandatoryFields" finished-at="2026-11-04T20:04:01 IST" duration-ms="3514" status="FAIL">
+    <test started-at="2026-11-04T20:19:13 IST" name="Default test" finished-at="2026-11-04T20:19:20 IST" duration-ms="7177">
+      <class name="tutorialsninja.register.TS_RF_009">
+        <test-method signature="verifyRegisterWithMandatoryFields()[pri:0, instance:tutorialsninja.register.TS_RF_009@3668d4]" started-at="2026-11-04T20:19:13 IST" name="verifyRegisterWithMandatoryFields" finished-at="2026-11-04T20:19:20 IST" duration-ms="7075" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Password confirmation does not mtch password!] but found [Password confirmation does not match password!]]]>
+              <![CDATA[expected [Warning: E-Mail Address is already registere!] but found [Warning: E-Mail Address is already registered!]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Password confirmation does not mtch password!] but found [Password confirmation does not match password!]
+              <![CDATA[java.lang.AssertionError: expected [Warning: E-Mail Address is already registere!] but found [Warning: E-Mail Address is already registered!]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at tutorialsninja.register.TC_RF_008.verifyRegisterWithMandatoryFields(TC_RF_008.java:49)
+at tutorialsninja.register.TS_RF_009.verifyRegisterWithMandatoryFields(TS_RF_009.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -53,11 +53,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterWithMandatoryFields -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:tutorialsninja.register.TC_RF_008@4bff64c2]" started-at="2026-11-04T20:04:01 IST" name="closure" finished-at="2026-11-04T20:04:01 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:tutorialsninja.register.TS_RF_009@3668d4]" started-at="2026-11-04T20:19:20 IST" name="closure" finished-at="2026-11-04T20:19:20 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- tutorialsninja.register.TC_RF_008 -->
+      </class> <!-- tutorialsninja.register.TS_RF_009 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
