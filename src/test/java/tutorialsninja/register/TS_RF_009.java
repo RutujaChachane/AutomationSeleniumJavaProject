@@ -49,8 +49,8 @@ WebDriver driver = new ChromeDriver();
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
-        File s = driver.findElement(By.xpath("//fieldset[@id='account']")).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(s, new File("./screenshots/1.png"));
+        File sc = driver.findElement(By.xpath("//fieldset[@id='account']")).getScreenshotAs(OutputType.FILE);
+        FileHandler.copy(sc, new File("./screenshots/1.png"));
 
         //AShot library can be used to compare two images or screenshots in Selenium WebDriver for visual regression testing
         

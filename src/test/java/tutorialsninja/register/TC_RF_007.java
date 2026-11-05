@@ -22,7 +22,7 @@ public class TC_RF_007 {
 	}
 	
 	@Test
-	public void navigateResgisterAccountPage() 
+	public void navigateTheResgisterAccountPage() 
 	{
 		
 		  

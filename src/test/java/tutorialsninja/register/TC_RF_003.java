@@ -44,23 +44,23 @@ WebDriver driver = new ChromeDriver();
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
-        SoftAssert softassert = new SoftAssert();
-        softassert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
         
-        softassert.assertEquals(driver.findElement(By.xpath("//div[@id='content']//h1")).getText(),"Your Account Has Been Created!");
+        softAssert.assertEquals(driver.findElement(By.xpath("//div[@id='content']//h1")).getText(),"Your Account Has Been Created!");
         
         String confirmationMessage = driver.findElement(By.xpath("//div[@id='content']")).getText();
         
-        softassert.assertEquals("confirmationMessage",confirmationMessage.contains("Congratulations! Your new account has been successfully created!"));
-        softassert.assertEquals("confirmationMessage",confirmationMessage.contains("You can now take advantage of member privileges to enhance your online shopping experience with us."));
-        softassert.assertEquals("confirmationMessage",confirmationMessage.contains("If you have ANY questions about the operation of this online shop, please e-mail the store owner.\n"
+        softAssert.assertEquals("confirmationMessage",confirmationMessage.contains("Congratulations! Your new account has been successfully created!"));
+        softAssert.assertEquals("confirmationMessage",confirmationMessage.contains("You can now take advantage of member privileges to enhance your online shopping experience with us."));
+        softAssert.assertEquals("confirmationMessage",confirmationMessage.contains("If you have ANY questions about the operation of this online shop, please e-mail the store owner.\n"
         		+ "\n"
         		+ ""));
-        softassert.assertEquals("confirmationMessage",confirmationMessage.contains("A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us."));
+        softAssert.assertEquals("confirmationMessage",confirmationMessage.contains("A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us."));
         
         driver.findElement(By.linkText("Continue")).click();
         
-        softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
         
 	}
 	

@@ -45,8 +45,8 @@ WebDriver driver = new ChromeDriver();
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
-        String s = driver.findElement(By.xpath("//div[@class='text-danger']")).getText();
-        Assert.assertEquals(s, "Password confirmation does not match password!");
+        String p = driver.findElement(By.xpath("//div[@class='text-danger']")).getText();
+        Assert.assertEquals(p, "Password confirmation does not match password!");
         
         
         

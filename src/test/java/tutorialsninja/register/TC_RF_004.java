@@ -48,9 +48,9 @@ public class TC_RF_004 {
 		   softAssert.assertEquals(email.getText(), "E-Mail Address does not appear to be valid!");
 		   
 		   
-           WebElement telephone = driver.findElement(By.xpath("//div[text()='Telephone must be between 3 and 32 characters!']"));
+           WebElement telephn = driver.findElement(By.xpath("//div[text()='Telephone must be between 3 and 32 characters!']"));
 		   
-		   softAssert.assertEquals(telephone.getText(), "Telephone must be between 3 and 32 characters!");
+		   softAssert.assertEquals(telephn.getText(), "Telephone must be between 3 and 32 characters!");
 		   
 		   
 		   

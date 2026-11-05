@@ -61,9 +61,9 @@ public class TC_RF_006 {
 			
 			  Date date = new Date();
 			  
-			  String email = date.toString().replace(" ", "").replace(":", "")+"@gmail.com";			  
+			  String mail = date.toString().replace(" ", "").replace(":", "")+"@gmail.com";			  
 					  
-			  return email;		
+			  return mail;		
 			
 		}	
 
