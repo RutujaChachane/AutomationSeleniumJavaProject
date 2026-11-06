@@ -14,7 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 
-public class TS_RF_009<Screenshot> {
+public class TC_RF_009<Screenshot> {
 
 WebDriver driver = new ChromeDriver();
 	
