@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tutorialsninja.register.TC_RF_010">
+      <class name="tutorialsninja.register.TC_RF_012">
         <methods>
-          <include name="verifyPhoneNumberField"/>
           <include name="closure"/>
+          <include name="fillFormWithTabSpaceEnterEvent"/>
         </methods>
-      </class> <!-- tutorialsninja.register.TC_RF_010 -->
+      </class> <!-- tutorialsninja.register.TC_RF_012 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

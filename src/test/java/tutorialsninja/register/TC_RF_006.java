@@ -22,7 +22,7 @@ public class TC_RF_006 {
 		}
 
 		@Test
-		public void verifyRegisterWithMandatoryFields() 
+		public void noOptionSelectedForNewsLetter() 
 		
 		{
 			

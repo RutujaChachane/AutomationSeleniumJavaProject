@@ -1,27 +1,32 @@
 package tutorialsninja.register;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
-import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class TC_RF_010 {
-	WebDriver driver = new ChromeDriver();
+
+public class TC_RF_010<Screenshot> {
+
+WebDriver driver = new ChromeDriver();
 	
 	@AfterMethod
 	public void closure() {
 		
-		//driver.quit();
+		driver.quit();
 		
 	}
 
 	@Test
-	public void verifyPhoneNumberField() throws InterruptedException 
+	public void emailNotInProperFormatTakeScreenshot() throws IOException 
 	
 	{
 		
@@ -34,36 +39,22 @@ public class TC_RF_010 {
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.id("input-firstname")).sendKeys("Rutuja");
-        driver.findElement(By.id("input-lastname")).sendKeys("Chachane");
-        driver.findElement(By.id("input-email")).sendKeys(generateEmail());
-        driver.findElement(By.id("input-telephone")).sendKeys("abcd");
+		driver.findElement(By.id("input-firstname")).sendKeys("Arun");
+        driver.findElement(By.id("input-lastname")).sendKeys("Motoori");
+        driver.findElement(By.id("input-email")).sendKeys("amotoori");
+        driver.findElement(By.id("input-telephone")).sendKeys("1234567891");
         driver.findElement(By.id("input-password")).sendKeys("12345");
         driver.findElement(By.id("input-confirm")).sendKeys("12345");
+        driver.findElement(By.xpath("//label[normalize-space()='No']")).click();
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
-        Thread.sleep(4000);
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='content']//h1")).getText(),"Your Account Has Been Created!");
-       // System.out.println("It is a Bug");
+        File sc = driver.findElement(By.xpath("//fieldset[@id='account']")).getScreenshotAs(OutputType.FILE);
+        FileHandler.copy(sc, new File("./screenshots/1.png"));
+
+        //AShot library can be used to compare two images or screenshots in Selenium WebDriver for visual regression testing
         
 	}
 	
-	
-	public String generateEmail() 
-	{
-		
-		  Date date = new Date();
-		  
-		  String email = date.toString().replace(" ", "").replace(":", "")+"@gmail.com";			  
-				  
-		  return email;		
-		
-	}
-	
-	
-	
-	
-	
-
 }
+	

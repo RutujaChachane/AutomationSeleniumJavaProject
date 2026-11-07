@@ -1,20 +1,16 @@
 package tutorialsninja.register;
 
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 
-public class TC_RF_009<Screenshot> {
+public class TC_RF_009 {
 
 WebDriver driver = new ChromeDriver();
 	
@@ -26,7 +22,7 @@ WebDriver driver = new ChromeDriver();
 	}
 
 	@Test
-	public void verifyRegisterWithMandatoryFields() throws IOException 
+	public void emailIsAlreadyRegistered() 
 	
 	{
 		
@@ -41,20 +37,42 @@ WebDriver driver = new ChromeDriver();
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.id("input-firstname")).sendKeys("Arun");
         driver.findElement(By.id("input-lastname")).sendKeys("Motoori");
-        driver.findElement(By.id("input-email")).sendKeys("amotoori");
+        driver.findElement(By.id("input-email")).sendKeys("amotoori1@gmail.com");
         driver.findElement(By.id("input-telephone")).sendKeys("1234567891");
         driver.findElement(By.id("input-password")).sendKeys("12345");
-        driver.findElement(By.id("input-confirm")).sendKeys("abcde");
-        driver.findElement(By.xpath("//label[normalize-space()='No']")).click();
+        driver.findElement(By.id("input-confirm")).sendKeys("12345");
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
-        File sc = driver.findElement(By.xpath("//fieldset[@id='account']")).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(sc, new File("./screenshots/1.png"));
-
-        //AShot library can be used to compare two images or screenshots in Selenium WebDriver for visual regression testing
+        
+       String s = driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText();
+       Assert.assertEquals(s, "Warning: E-Mail Address is already registered!");
+        
         
 	}
 	
-}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

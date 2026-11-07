@@ -21,7 +21,7 @@ WebDriver driver = new ChromeDriver();
 	}
 
 	@Test
-	public void verifyRegisterWithMandatoryFields() 
+	public void verifyRegisterWithAllFields() 
 	
 	{
 		
